@@ -80,7 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: beanstalk-rails_production
   database: <%= ENV['RDS_DB_NAME'] %>
   username: <%= ENV['RDS_USERNAME'] %>
   password: <%= ENV['RDS_PASSWORD'] %>
